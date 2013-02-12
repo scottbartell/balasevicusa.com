@@ -1,0 +1,61 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+/* Reset CSS sucks */
+
+* {
+  margin: 0;
+  padding: 0;
+  
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 700px;
+}
+
+body {
+  font: 15px/25px "Helvetica Neue", sans-serif;
+  color: #7c786f;
+  text-shadow: 0 1px 0 rgba(255,255,255,.2);
+  
+  background: #000;
+}
+
+label, div, section, img, header, footer {
+  display: block;
+}
+
+label[for] {
+  cursor: pointer;
+}
+  
+input, textarea, button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.clear {
+  clear: both;
+  overflow: hidden;
+}
+
+.clear:after {
+  content: '';
+  display: table;
+  height: 1px;
+}

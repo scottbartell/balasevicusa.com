@@ -1,0 +1,10 @@
+<%= simple_form_for @subscriber do |f| %>
+  <%= f.input :email, :label => "Email Address:", :placeholder => "balasevic.rocks@email.com" %>
+  <%= f.input :zip_code, :label => "Postal Code:", :placeholder => "12345" %>
+  <%= f.button :submit, "Submit" %>
+  <% if flash[:notice] %>
+  <span class="success"><%= flash[:notice] %></span>
+  <% end %>
+  <br class="clear">
+<% end %>
+
